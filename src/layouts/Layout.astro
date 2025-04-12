@@ -1,11 +1,35 @@
+---
+import '@/styles/global.css'
+
+const title = "Luis San Martín – Desarrollador Web";
+const description = "Desarrollador web con experiencia en Drupal, JavaScript, WordPress y tecnologías modernas.";
+const url = "https://luissanmartin.es";
+const image = `${url}/og-image.png`;
+---
+
 <!doctype html>
-<html lang="en">
+<html lang="es">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<title>{title}</title>
+
+		<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+
+		<meta name="description" content={description} />
+		<meta name="author" content="Luis San Martín" />
+
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={url} />
+    <meta property="og:image" content={image} />
+		<meta property="og:site_name" content="Luis San Martín" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={image} />
 	</head>
 	<body>
 		<slot />

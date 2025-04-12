@@ -1,11 +1,17 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Card from '@/components/Card.astro';
+import Layout from '@/layouts/Layout.astro';
 ---
 
 <Layout>
-	<Welcome />
+	<Card 
+	name="Luis San Martín"
+	position="Full stack developer | Drupal | Wordpress | HTML5 | SCSS | Bootstrap | Tailwind CSS | PHP | JavaScript | JQuery"
+	aboutMe={[
+		"Desarrollador web con más de 4 años de experiencia, especializado en tecnologías como PHP, HTML5, CSS, JavaScript, Bootstrap y jQuery. Sólida experiencia en Drupal, tanto en desarrollo Front-End como Back-End, respaldada por las certificaciones oficiales Forcontu en Drupal 10 (Front-End y Back-End Development). También cuento con la certificación oficial JavaScript JSE-40-01.",
+		"He trabajado en una amplia variedad de proyectos accesibles y responsive, aplicando metodologías BEM y preprocesadores como Sass y Less. Domino CMS como WordPress y PrestaShop. Tengo experiencia con Docker, Composer, npm y GitFlow. He participado en equipos ágiles con metodologías como SCRUM.",
+		"Comprometido con las buenas prácticas, la accesibilidad web y la calidad técnica."
+	]}
+	profileImage="/images/profile.webp"
+		/>
 </Layout>
